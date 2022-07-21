@@ -1,0 +1,25 @@
+{
+  "name": "itbootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Btriz/itbootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Btriz/itbootcamp/issues"
+  },
+  "homepage": "https://github.com/Btriz/itbootcamp#readme",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-trybe-fundamentals": "^1.1.1",
+    "eslint-plugin-react": "^7.30.1"
+  }
+}
