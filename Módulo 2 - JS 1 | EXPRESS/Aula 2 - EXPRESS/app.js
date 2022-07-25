@@ -60,10 +60,6 @@ app.delete('/produto/:id', (req, res) => {
   res.status(200).json(produtos);
 })
 
-app.listen(PORT, () =>
-  console.log(`Servidor em execução na porta ${PORT}`)
-);
-
 app.get('/produto', (req, res) => {
   res.send(produtos);
 });
@@ -72,9 +68,13 @@ app.get('/produto', (req, res) => {
 app.get('/produto/:id/:details?', (req, res) => {
   const  { id } = req.params;
   const detais = req.params.details || 'Sem descrição';
-
+  
   const product = produtos.find((produto) => produto.id === Number(id));
-
+  
   console.log(detais);
   res.status(200).json(product)
 });
+
+app.listen(PORT, () =>
+  console.log(`Servidor em execução na porta ${PORT}`)
+);
