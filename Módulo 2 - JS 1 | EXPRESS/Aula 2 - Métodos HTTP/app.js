@@ -4,7 +4,6 @@ const app = express();
 const PORT = 3000;
 
 // Crie um endpoint que use o método GET e retorne a mensagem “Hello World!” como resposta
-
 app.get('/', (req, res) => {
   if (1 < 2) {
     res.send('Hello world! 👋');
@@ -14,10 +13,14 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 
+// ------------------------------------------------------
+// Exercício 2
+
 // - POST para adicionar 4 produtos, de uma vez.
 // - PUT para modificar um desses produtos.
 // - DELETE para deletar um desses produtos.
 // - GET para verificar os que foram mantidos.
+// ------------------------------------------------------
 
 app.post('/produto', (req, res) => {
   const content = req.body;
